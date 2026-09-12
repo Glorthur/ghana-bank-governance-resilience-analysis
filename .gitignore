@@ -1,0 +1,33 @@
+# Local orchestration and environments
+coord/
+orchestrator.config.local.jsonc
+.venv/
+venv/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local and third-party source material
+*.docx
+*.pdf
+*.zip
+*.rar
+extracted_text/
+working/
+data/raw/
+
+# Generated inspection and temporary files
+*.inspect.ndjson
+*.tmp
+*.temp
+~$*
+.DS_Store
+Thumbs.db
+
