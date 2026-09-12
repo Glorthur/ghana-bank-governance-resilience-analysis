@@ -13,7 +13,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / "data" / "frozen" / "bank_year_master.csv"
-OUTPUT_ROOT = ROOT
+OUTPUT_ROOT = ROOT / "outputs"
 
 
 def sha256(path: Path) -> str:
@@ -58,8 +58,8 @@ def main() -> None:
         "ANALYSIS_INTERPRETATION_MEMO.md",
         "CHAPTER_FOUR_DRAFTING_OUTLINE.md",
         "DATA_VALIDATION_REPORT.md",
-        "VALIDATION_REPORT.json",
-        "OUTPUT_MANIFEST.json",
+        "manifests/VALIDATION_REPORT.json",
+        "manifests/OUTPUT_MANIFEST.json",
     ]
     checks: dict[str, object] = {}
     checks["all_required_files_present"] = all(
@@ -178,7 +178,9 @@ def main() -> None:
     )
     workbook.close()
 
-    manifest = json.loads((OUTPUT_ROOT / "OUTPUT_MANIFEST.json").read_text(encoding="utf-8"))
+    manifest = json.loads(
+        (OUTPUT_ROOT / "manifests" / "OUTPUT_MANIFEST.json").read_text(encoding="utf-8")
+    )
     manifest_checks = []
     for item in manifest["files"]:
         normalized_path = item["path"].replace("\\", "/")
@@ -196,7 +198,9 @@ def main() -> None:
         "missing_required_files": missing,
         "figure_checks": figure_checks,
     }
-    (OUTPUT_ROOT / "FINAL_ANALYSIS_AUDIT.json").write_text(
+    manifest_dir = OUTPUT_ROOT / "manifests"
+    manifest_dir.mkdir(parents=True, exist_ok=True)
+    (manifest_dir / "FINAL_ANALYSIS_AUDIT.json").write_text(
         json.dumps(
             payload,
             indent=2,

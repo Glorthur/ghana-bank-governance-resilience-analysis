@@ -1,0 +1,56 @@
+{
+  "result": "PASS",
+  "checks": {
+    "all_required_files_present": true,
+    "frozen_hash_matches_input": true,
+    "panel_rows_96": true,
+    "panel_unique_keys": true,
+    "register_rows_96": true,
+    "primary_rows_95": true,
+    "primary_banks_16": true,
+    "ori_ceiling_matches_frozen_source": true,
+    "six_primary_models": true,
+    "all_primary_models_n95": true,
+    "all_primary_models_year_effects": true,
+    "fe_has_h1_h3": true,
+    "fe_h1_h3_finite": true,
+    "wild_tests_h1_h3": true,
+    "wild_tests_estimated": true,
+    "wild_pvalues_finite": true,
+    "wild_statistics_finite": true,
+    "car_n70_b15": true,
+    "bounded_models_n95_b16": true,
+    "npl_n43_b10": true,
+    "leave_one_out_16": true,
+    "all_figures_nonblank": true,
+    "workbook_opens_with_expected_sheets": true,
+    "manifest_hashes_match": true
+  },
+  "missing_required_files": [],
+  "figure_checks": {
+    "figure_01_ori_distribution.png": {
+      "width": 1584,
+      "height": 1012,
+      "pixel_std": 73.05543263685439,
+      "nonblank": true
+    },
+    "figure_02_ori_year_trend.png": {
+      "width": 1584,
+      "height": 1012,
+      "pixel_std": 27.121880138175868,
+      "nonblank": true
+    },
+    "figure_03_marginal_effect_board_independence.png": {
+      "width": 1584,
+      "height": 1056,
+      "pixel_std": 31.928611229189773,
+      "nonblank": true
+    },
+    "figure_04_leave_one_bank_out_interaction.png": {
+      "width": 1848,
+      "height": 1144,
+      "pixel_std": 37.966164855177695,
+      "nonblank": true
+    }
+  }
+}

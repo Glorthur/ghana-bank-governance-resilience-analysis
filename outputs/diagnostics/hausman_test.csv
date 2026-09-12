@@ -1,0 +1,2 @@
+test,statistic,degrees_of_freedom,p_value,interpretation,caveat
+Conventional Hausman FE versus RE,0.3277352639638403,6,0.9993511058926299,Do not reject RE consistency,Conventional covariance-difference test; interpret with the Mundlak check.

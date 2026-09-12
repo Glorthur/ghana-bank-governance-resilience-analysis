@@ -1,0 +1,2 @@
+test,lm_statistic,lm_p_value,f_statistic,f_p_value,interpretation
+Breusch-Pagan heteroskedasticity test,53.512349269854944,0.0011689465410529467,3.373422513696943,3.1199207835138826e-05,Evidence of heteroskedasticity

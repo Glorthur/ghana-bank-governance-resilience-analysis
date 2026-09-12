@@ -17,7 +17,14 @@ def test_no_forbidden_source_or_binary_artifacts():
 
 
 def test_no_machine_local_paths_in_tracked_text():
-    path_markers = ("G:\\\\", "C:\\\\", "/Users/", "/home/", "\\\\Users\\\\")
+    slash = "\\"
+    path_markers = (
+        "G:" + slash,
+        "C:" + slash,
+        "/" + "Users/",
+        "/" + "home/",
+        slash + "Users" + slash,
+    )
     for relative in tracked_files():
         if relative.suffix.lower() in {".png", ".jpg", ".jpeg", ".gif", ".ico"}:
             continue

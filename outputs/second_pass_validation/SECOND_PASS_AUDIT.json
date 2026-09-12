@@ -1,0 +1,72 @@
+{
+  "result": "PASS",
+  "checks": {
+    "input_hash_available": true,
+    "raw_rows_96": true,
+    "sample_rows_95": true,
+    "banks_16": true,
+    "unique_bank_year": true,
+    "single_core_exclusion": true,
+    "excluded_row_is_first_atlantic_2024": true,
+    "ori_recomputes": true,
+    "board_independence_recomputes": true,
+    "firm_size_recomputes": true,
+    "roa_recomputes": true,
+    "liquidity_recomputes": true,
+    "leverage_recomputes": true,
+    "ori_ceiling_matches_verified_source": true,
+    "three_way_coefficient_match_below_1e_8": true,
+    "nondirectional_h1_supported": true,
+    "h2_h3_remain_unsupported": true,
+    "directional_h2_h3_unsupported": true
+  },
+  "within_variation": {
+    "banks_with_ori_variation": 10,
+    "banks_with_board_independence_variation": 16,
+    "banks_with_firm_size_variation": 16,
+    "within_sd_ori": 7.357112864748055,
+    "within_sd_board_independence": 0.11399982888676528,
+    "within_sd_firm_size": 0.4332001285534666
+  },
+  "glm_status": {
+    "Binary full-disclosure GLM with bank and year indicators": "estimated; converged=True; finite inference=True; max substantive |coefficient|=68.373",
+    "Fractional logit GLM with bank and year indicators": "estimated; converged=True; finite inference=True; max substantive |coefficient|=2.434",
+    "Poisson missing-disclosures GLM with bank and year indicators": "estimated; converged=True; finite inference=True; max substantive |coefficient|=2.163"
+  },
+  "largest_three_way_coefficient_difference": 2.8066438062523957e-13,
+  "primary_hypotheses": [
+    {
+      "hypothesis": "H1",
+      "model": "Two-way FE main-effects model without interaction",
+      "variable": "board_independence_c",
+      "coefficient": -18.76021517327689,
+      "std_error": 8.114685762179068,
+      "ci_lower_95": -34.66499926714786,
+      "ci_upper_95": -2.8554310794059177,
+      "p_value": 0.023775001968191267,
+      "method": "linearmodels PanelOLS"
+    },
+    {
+      "hypothesis": "H2",
+      "model": "Two-way FE main-effects model without interaction",
+      "variable": "firm_size_c",
+      "coefficient": 9.133234453461222,
+      "std_error": 7.70222542540685,
+      "ci_lower_95": -5.9631273803362035,
+      "ci_upper_95": 24.229596287258648,
+      "p_value": 0.23977206236667725,
+      "method": "linearmodels PanelOLS"
+    },
+    {
+      "hypothesis": "H3",
+      "model": "Two-way FE: bank-clustered SE",
+      "variable": "board_x_size",
+      "coefficient": 14.33895260013248,
+      "std_error": 18.511778102803735,
+      "ci_lower_95": -21.944132481362843,
+      "ci_upper_95": 50.6220376816278,
+      "p_value": 0.441269749132728,
+      "method": "linearmodels PanelOLS"
+    }
+  ]
+}

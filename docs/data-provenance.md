@@ -6,12 +6,12 @@ Every annual-report observation is linked to a stable identifier of the form `an
 
 ## Published provenance
 
-`data/provenance/source_register.csv` contains report-level metadata, including page counts, searchable-page measures, extraction status, report status, hashes, and manual adjudication notes. Local absolute paths and extracted-text paths have been removed for portability and privacy.
+`data/metadata/source_register.csv` contains report-level metadata, including page counts, searchable-page measures, extraction status, report status, hashes, and manual adjudication notes. Local absolute paths and extracted-text paths have been removed for portability and privacy.
 
-`data/provenance/ori_evidence.csv` contains the eight-item evidence trail for each bank-year, including page references, matched coding rules, concise evidence excerpts, pass comparison, and final adjudication. `manual_verification_register.csv` records the review status, corrections, review date, and notes for each bank-year.
+`data/evidence/ori_evidence.csv` contains the eight-item evidence trail for each bank-year, including page references, matched coding rules, concise evidence excerpts, pass comparison, and final adjudication. `data/evidence/manual_verification_register.csv` records the review status, corrections, review date, and notes for each bank-year.
 
 The provenance files are evidence about the curated dataset; they are not a substitute for the underlying source reports. Source reports and extracted text remain outside this repository.
 
 ## Release boundary
 
-The frozen CSV is the audited reproducibility input. The current-release CSV is an analysis-ready derivative and may contain additional computed columns. Any future data release should preserve the frozen file, update hashes and review metadata, and document changes rather than overwriting the historical boundary.
+The frozen CSV is the audited reproducibility input. The processed CSV is an analysis-ready derivative and may contain additional computed columns. Any future data release should preserve the frozen file, update hashes and review metadata, and document changes rather than overwriting the historical boundary.

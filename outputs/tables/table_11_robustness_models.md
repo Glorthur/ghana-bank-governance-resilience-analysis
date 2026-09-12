@@ -1,0 +1,27 @@
+| model                           | outcome         | variable               |   coefficient |   std_error |   p_value |   observations |   banks | bank_effects   | year_effects   | standard_errors   |
+|:--------------------------------|:----------------|:-----------------------|--------------:|------------:|----------:|---------------:|--------:|:---------------|:---------------|:------------------|
+| CAR-augmented two-way FE        | ori_score       | board_independence_c   |      -12.301  |     10.795  |    0.2608 |             70 |      15 | True           | True           | clustered by bank |
+| CAR-augmented two-way FE        | ori_score       | firm_size_c            |       -2.216  |      6.145  |    0.7201 |             70 |      15 | True           | True           | clustered by bank |
+| CAR-augmented two-way FE        | ori_score       | board_x_size           |       16.864  |     20.0013 |    0.4038 |             70 |      15 | True           | True           | clustered by bank |
+| CAR-augmented two-way FE        | ori_score       | roa                    |       85.5738 |     45.5576 |    0.0671 |             70 |      15 | True           | True           | clustered by bank |
+| CAR-augmented two-way FE        | ori_score       | liquidity_ratio        |        1.9546 |     18.8212 |    0.9178 |             70 |      15 | True           | True           | clustered by bank |
+| CAR-augmented two-way FE        | ori_score       | leverage_ratio         |       14.6729 |     29.8843 |    0.6259 |             70 |      15 | True           | True           | clustered by bank |
+| CAR-augmented two-way FE        | ori_score       | capital_adequacy_ratio |        0.1599 |      0.1995 |    0.427  |             70 |      15 | True           | True           | clustered by bank |
+| Full-disclosure logit GLM       | full_disclosure | board_independence_c   |       -2.854  |      1.9766 |    0.1488 |             95 |      16 | False          | True           | clustered by bank |
+| Full-disclosure logit GLM       | full_disclosure | firm_size_c            |       -0.6047 |      0.7595 |    0.426  |             95 |      16 | False          | True           | clustered by bank |
+| Full-disclosure logit GLM       | full_disclosure | board_x_size           |        2.6062 |      2.3338 |    0.2641 |             95 |      16 | False          | True           | clustered by bank |
+| Full-disclosure logit GLM       | full_disclosure | roa                    |       30.7663 |     17.6662 |    0.0816 |             95 |      16 | False          | True           | clustered by bank |
+| Full-disclosure logit GLM       | full_disclosure | liquidity_ratio        |       -1.3917 |      3.8901 |    0.7205 |             95 |      16 | False          | True           | clustered by bank |
+| Full-disclosure logit GLM       | full_disclosure | leverage_ratio         |       13.145  |      9.463  |    0.1648 |             95 |      16 | False          | True           | clustered by bank |
+| Fractional-response logit GLM   | ori_fraction    | board_independence_c   |       -1.8915 |      0.9846 |    0.0547 |             95 |      16 | False          | True           | clustered by bank |
+| Fractional-response logit GLM   | ori_fraction    | firm_size_c            |       -0.0846 |      0.4494 |    0.8507 |             95 |      16 | False          | True           | clustered by bank |
+| Fractional-response logit GLM   | ori_fraction    | board_x_size           |        0.6692 |      1.0509 |    0.5243 |             95 |      16 | False          | True           | clustered by bank |
+| Fractional-response logit GLM   | ori_fraction    | roa                    |       15.7241 |      9.6981 |    0.1049 |             95 |      16 | False          | True           | clustered by bank |
+| Fractional-response logit GLM   | ori_fraction    | liquidity_ratio        |       -0.3106 |      2.6701 |    0.9074 |             95 |      16 | False          | True           | clustered by bank |
+| Fractional-response logit GLM   | ori_fraction    | leverage_ratio         |        8.3802 |      6.0442 |    0.1656 |             95 |      16 | False          | True           | clustered by bank |
+| NPL separate-outcome two-way FE | npl_ratio       | board_independence_c   |        8.2063 |     21.4947 |    0.7063 |             43 |      10 | True           | True           | clustered by bank |
+| NPL separate-outcome two-way FE | npl_ratio       | firm_size_c            |      -21.3605 |     21.1725 |    0.324  |             43 |      10 | True           | True           | clustered by bank |
+| NPL separate-outcome two-way FE | npl_ratio       | board_x_size           |      -18.4461 |     36.0036 |    0.6135 |             43 |      10 | True           | True           | clustered by bank |
+| NPL separate-outcome two-way FE | npl_ratio       | roa                    |      175.606  |     84.7025 |    0.0501 |             43 |      10 | True           | True           | clustered by bank |
+| NPL separate-outcome two-way FE | npl_ratio       | liquidity_ratio        |       47.9989 |     76.7694 |    0.5382 |             43 |      10 | True           | True           | clustered by bank |
+| NPL separate-outcome two-way FE | npl_ratio       | leverage_ratio         |       19.2578 |     88.6855 |    0.8301 |             43 |      10 | True           | True           | clustered by bank |

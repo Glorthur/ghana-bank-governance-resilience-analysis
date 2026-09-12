@@ -20,6 +20,8 @@ htmlcov/
 *.pdf
 *.zip
 *.rar
+*.xlsx
+*.xlsm
 extracted_text/
 working/
 data/raw/

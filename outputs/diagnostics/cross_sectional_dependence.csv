@@ -1,0 +1,2 @@
+test,banks,usable_pairs,mean_pairwise_correlation,statistic,p_value,interpretation
+Pesaran CD test on FE residuals,16,120,-0.012910860778065933,-0.28599119061750433,0.7748848687653718,No evidence of cross-sectional dependence

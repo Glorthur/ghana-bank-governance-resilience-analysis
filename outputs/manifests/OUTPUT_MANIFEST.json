@@ -1,0 +1,275 @@
+{
+  "generated_at_utc": "2026-09-12T13:48:47.813155+00:00",
+  "files": [
+    {
+      "path": "ANALYSIS_INTERPRETATION_MEMO.md",
+      "bytes": 4636,
+      "sha256": "6fe01346aca89a87c6db51eef179ae8e18a7961a04f9fe34a17d07649046b75a"
+    },
+    {
+      "path": "CHAPTER_FOUR_DRAFTING_OUTLINE.md",
+      "bytes": 2875,
+      "sha256": "19ba78e4fac3a7d13be5229a2634abb8b7a0fa1d6e06141e48c6edc238b14255"
+    },
+    {
+      "path": "data\\analysis_ready_panel.csv",
+      "bytes": 64176,
+      "sha256": "6f12a7a95fdf3e5020b31c4d3ae4d8a4493240444e90bdfe144f622c6442b8ac"
+    },
+    {
+      "path": "data\\marginal_effect_grid.csv",
+      "bytes": 9782,
+      "sha256": "ae40f854c49ce40bef3a44c89562e802182cf0ee1f3b0cb4a2c39d940b2e22e8"
+    },
+    {
+      "path": "data\\primary_model_sample_95.csv",
+      "bytes": 63522,
+      "sha256": "5b21873e36541a3e6797dc5f816b8ff4a3638566bd7b605d16b9fffa4f0311e3"
+    },
+    {
+      "path": "DATA_VALIDATION_REPORT.md",
+      "bytes": 645,
+      "sha256": "bae4743946210293990e1166e3834665eeb34ad197144d9d2482e7ddb300b79b"
+    },
+    {
+      "path": "diagnostics\\cross_sectional_dependence.csv",
+      "bytes": 228,
+      "sha256": "59bf77d7cb103cb9d3ac59c0ac978d764e1e7b3d531324bea12dbeed6704e512"
+    },
+    {
+      "path": "diagnostics\\hausman_test.csv",
+      "bytes": 244,
+      "sha256": "3c59d1b2d87c1f1666469b8f5ef804f7e177f01c923d35756f2c1497e7d9e4f7"
+    },
+    {
+      "path": "diagnostics\\heteroskedasticity.csv",
+      "bytes": 219,
+      "sha256": "fc87005cadb8dfa43a99fa57425e72898e87a31583a4375151c10009a3568c5d"
+    },
+    {
+      "path": "diagnostics\\influence.csv",
+      "bytes": 16160,
+      "sha256": "60a3d3a28e3c8bfa13167ad8e45a4a175a5614a712ded66735b38da50390a389"
+    },
+    {
+      "path": "diagnostics\\mundlak_test.csv",
+      "bytes": 210,
+      "sha256": "cffb93d830b4f15c249a2a10cad5410a1e7697327282bce7af33fd790a22a157"
+    },
+    {
+      "path": "diagnostics\\serial_correlation.csv",
+      "bytes": 336,
+      "sha256": "408f3b51ad11688bdb578ddaa609dd9c9845873e64c495a14c8902713d7a4273"
+    },
+    {
+      "path": "diagnostics\\wild_cluster_bootstrap_h1_h3.csv",
+      "bytes": 283,
+      "sha256": "123292c93daf6520f81f53f9721b496fbfd76f41bcfd4aefc6a6b649aec59a26"
+    },
+    {
+      "path": "figures\\figure_01_ori_distribution.png",
+      "bytes": 68288,
+      "sha256": "03f6047bc73954e093be8afd35a67f15d225e245d9458ea99d6fcda847ac0bbb"
+    },
+    {
+      "path": "figures\\figure_02_ori_year_trend.png",
+      "bytes": 69178,
+      "sha256": "ae4d812ad3a919517497ec9b583f7ce527254f53d814dcf80c4f442b59a10159"
+    },
+    {
+      "path": "figures\\figure_03_marginal_effect_board_independence.png",
+      "bytes": 102911,
+      "sha256": "026316176893014219ffc7534213f19752ef2c7bb29f64069e717224651fe040"
+    },
+    {
+      "path": "figures\\figure_04_leave_one_bank_out_interaction.png",
+      "bytes": 155307,
+      "sha256": "52301b321934a65766246b0ef8e08ae17fa6edb003dc1a7eb166654e64984bd5"
+    },
+    {
+      "path": "input_frozen\\bank_year_master.csv",
+      "bytes": 55905,
+      "sha256": "e37c7fdcb0dd8268982891dbf005e3666fd6aa237838ac49856aefbf4844e933"
+    },
+    {
+      "path": "logs\\run_summary.json",
+      "bytes": 154,
+      "sha256": "5a6a1c4ccf28ccad15154e81b4c1a09ef315267fef4d61bf66aa10da2af4832f"
+    },
+    {
+      "path": "manifests\\INPUT_MANIFEST.json",
+      "bytes": 252,
+      "sha256": "cac2e8fece3473a64a8789943471b7e641f9e3688ce9695c40c7dbfb1b3db5b7"
+    },
+    {
+      "path": "manifests\\VALIDATION_REPORT.json",
+      "bytes": 1398,
+      "sha256": "08cc052d9b860713a5c1d42bd55154c892940abad90f755cdb53dbbf02f44b12"
+    },
+    {
+      "path": "second_pass_validation\\bounded_outcome_bank_indicator_models.csv",
+      "bytes": 2543,
+      "sha256": "e58ce4854dc9f127d277fffef4459f36132aa834404ab4cafb1edabc2f20394e"
+    },
+    {
+      "path": "second_pass_validation\\cluster_bootstrap_draws.csv",
+      "bytes": 237491,
+      "sha256": "66b491549ec8dc25df257f548c603ffbaf63de415e07516e9bbcb8ecef7c8d5f"
+    },
+    {
+      "path": "second_pass_validation\\cluster_bootstrap_summary.csv",
+      "bytes": 531,
+      "sha256": "cf1c6ef19ebcc7a2a9d6ba08f02e5e63c2bf57456f7f73ca9f7d012dff97e47c"
+    },
+    {
+      "path": "second_pass_validation\\coefficient_crosscheck.csv",
+      "bytes": 648,
+      "sha256": "80263b85d6617b80244c721e6f48d662049d471e8375fc23930f99694f52ebb2"
+    },
+    {
+      "path": "second_pass_validation\\directional_one_sided_tests.csv",
+      "bytes": 354,
+      "sha256": "6eacf02a4a800c84b81bbe40e82bc6c58d6f79ce5ed40844d1b31e83dbd569e7"
+    },
+    {
+      "path": "second_pass_validation\\SECOND_PASS_AUDIT.json",
+      "bytes": 2764,
+      "sha256": "82e7adac4193d58385a9d19c7f08a907ee5d1b5839f0329345aaf0a45b9d665f"
+    },
+    {
+      "path": "second_pass_validation\\SECOND_PASS_VALIDATION_REPORT.md",
+      "bytes": 5130,
+      "sha256": "d5e7a2dc1c48e29cf60bb4b94657f97f47d8ec2bcccde470587493cb692ac5d1"
+    },
+    {
+      "path": "second_pass_validation\\specification_and_covariance_sensitivity.csv",
+      "bytes": 5153,
+      "sha256": "b017f84ff5ce420b26a7b8f1e525df07097a7cf021e6f47a00b93c4c4b24f0d0"
+    },
+    {
+      "path": "second_pass_validation\\within_bank_variation.csv",
+      "bytes": 1964,
+      "sha256": "55abed1e38bb8c5a41b0eb75c59d25517249fdc950452661a9d5e1550a8f1996"
+    },
+    {
+      "path": "tables\\analysis_sample_register.csv",
+      "bytes": 28128,
+      "sha256": "a4d16237966e65ca7070bb3a39430caa32314d1691863c8a5db197c881f8e74c"
+    },
+    {
+      "path": "tables\\missingness_report.csv",
+      "bytes": 1426,
+      "sha256": "bbe35b1be2d4f8fc2ba55104b8d3dfdfcc8c30abac41a7f24540ae13268f46d7"
+    },
+    {
+      "path": "tables\\table_01_descriptive_core.csv",
+      "bytes": 846,
+      "sha256": "d35bdf66653b5c6c2f2d619bd11caac29ed7f247268f2e83000e168447fa9ea9"
+    },
+    {
+      "path": "tables\\table_01_descriptive_core.md",
+      "bytes": 864,
+      "sha256": "51d73ab333ad6ce2223fe62dcb9cdfee9260361c73dd3ca1195019569e8e287b"
+    },
+    {
+      "path": "tables\\table_02_descriptive_extended.csv",
+      "bytes": 239,
+      "sha256": "1f66ba5caa873c765f0be1b46e2539765be70b16ebcf191047b8382f20827fd0"
+    },
+    {
+      "path": "tables\\table_02_descriptive_extended.md",
+      "bytes": 412,
+      "sha256": "336774f987e783248f34756b610c2e893e5757b04849c7e3cb0cdb6c050d76ab"
+    },
+    {
+      "path": "tables\\table_03_descriptive_by_year.csv",
+      "bytes": 653,
+      "sha256": "9ff96e9ec1996d61e074423ef0d1772b9eaba869d7260b8ee213bb01f5da487a"
+    },
+    {
+      "path": "tables\\table_03_descriptive_by_year.md",
+      "bytes": 1200,
+      "sha256": "f6ea4c335669c7d53a9b3805966b3d3aa60817c54b6fea786a81dd4b6cae34a5"
+    },
+    {
+      "path": "tables\\table_04_descriptive_by_bank.csv",
+      "bytes": 1834,
+      "sha256": "7a90433f960eec62855292fd44eb921d6679d64e9db9a8e016646fd22ecd8995"
+    },
+    {
+      "path": "tables\\table_04_descriptive_by_bank.md",
+      "bytes": 3420,
+      "sha256": "fee38eeb572ed1b6eabfa54e2101e24c5d10ccbb04bed394e81f0d9dd779508d"
+    },
+    {
+      "path": "tables\\table_05_ori_distribution.csv",
+      "bytes": 135,
+      "sha256": "e5aac4dcc49385c7e8d5309e1f38e799c17f3531f9d95a0bfb43dd8d84cdade5"
+    },
+    {
+      "path": "tables\\table_05_ori_distribution.md",
+      "bytes": 234,
+      "sha256": "aa88db8dcf8eb9406682016ca4db51c39d73f22c0c53971338316998ca04654f"
+    },
+    {
+      "path": "tables\\table_06_ori_component_prevalence.csv",
+      "bytes": 230,
+      "sha256": "b9715be2095e52789d99f79c30b6ac27be7ff98f903af8ac8aa25974351a025d"
+    },
+    {
+      "path": "tables\\table_06_ori_component_prevalence.md",
+      "bytes": 690,
+      "sha256": "dbd80211ab169aa4749a49b4581d6f42cb5d3687f8bf29a68a5a14c2dcb87632"
+    },
+    {
+      "path": "tables\\table_07_correlation_matrix.csv",
+      "bytes": 1051,
+      "sha256": "f6e0190790e192adddb6f6d9f95f360d44096306625aef8e1f57000cfc9ac82d"
+    },
+    {
+      "path": "tables\\table_07_correlation_matrix.md",
+      "bytes": 1323,
+      "sha256": "4baf675504a73d603cf2d3e85d2294a8eb430eb731a06019941157ad3c8130a0"
+    },
+    {
+      "path": "tables\\table_08_vif.csv",
+      "bytes": 221,
+      "sha256": "0e3b040ee6519b52d4f4725ffb2fbaa6fe1181bcf00c09116108db7d3c06ef65"
+    },
+    {
+      "path": "tables\\table_09_panel_regressions.csv",
+      "bytes": 6120,
+      "sha256": "d58d20b7b4fc0571974812f31a7d4bc09ae714a43fdc37034aca2f1f72207019"
+    },
+    {
+      "path": "tables\\table_09_panel_regressions.md",
+      "bytes": 8645,
+      "sha256": "17d3d5b8ea98df159b67dfac941d38e9c78064849934b5bf7d3dca4f5125ec4a"
+    },
+    {
+      "path": "tables\\table_10_simple_slopes.csv",
+      "bytes": 496,
+      "sha256": "9289b8e1dcb52fc531d352ced05180f58c3ed1a618df487dad8db0cf7ae8f493"
+    },
+    {
+      "path": "tables\\table_10_simple_slopes.md",
+      "bytes": 715,
+      "sha256": "f827b1fc64ee68f2aa7c65be78401af3bdc66769a4cc2ba081d0e2e5a4307e62"
+    },
+    {
+      "path": "tables\\table_11_robustness_models.csv",
+      "bytes": 3775,
+      "sha256": "a36200431c74759de076513824aff13100b8774e5fdfab1bec2304669bd49658"
+    },
+    {
+      "path": "tables\\table_11_robustness_models.md",
+      "bytes": 5481,
+      "sha256": "83ce75badf379404ba3ed8c79acd79e1e6d42d10a403deca31c38abae722d632"
+    },
+    {
+      "path": "tables\\table_12_leave_one_bank_out.csv",
+      "bytes": 2535,
+      "sha256": "c49a227d4718877103442176d5fb6deb7d0042278b04debd5dd3c513cb3b862d"
+    }
+  ]
+}

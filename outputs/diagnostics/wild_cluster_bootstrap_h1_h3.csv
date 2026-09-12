@@ -1,0 +1,4 @@
+hypothesis,parameter,bootstrap_draws,t_statistic,p_value,status
+H1,board_independence_c,9999,-2.2503476834727887,0.0392039203920392,estimated
+H2,firm_size_c,9999,1.154228769735834,0.17441744174417442,estimated
+H3,board_x_size,9999,0.7539678150099811,0.5446544654465446,estimated

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "primary_observations": 95,
+  "banks": 16,
+  "car_observations": 70,
+  "npl_observations": 43,
+  "output_root": "outputs"
+}

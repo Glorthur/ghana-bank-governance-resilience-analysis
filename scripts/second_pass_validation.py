@@ -16,7 +16,7 @@ from linearmodels.panel import PanelOLS, PooledOLS, RandomEffects
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / "data" / "frozen" / "bank_year_master.csv"
-OUT_ROOT = ROOT
+OUT_ROOT = ROOT / "outputs"
 OUT = OUT_ROOT / "second_pass_validation"
 FROZEN = INPUT
 CORE_RAW = [

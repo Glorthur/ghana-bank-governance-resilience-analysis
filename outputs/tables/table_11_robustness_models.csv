@@ -1,0 +1,26 @@
+model,outcome,variable,coefficient,std_error,p_value,observations,banks,bank_effects,year_effects,standard_errors
+CAR-augmented two-way FE,ori_score,board_independence_c,-12.300997125496375,10.794964671830101,0.2607975663030575,70,15,True,True,clustered by bank
+CAR-augmented two-way FE,ori_score,firm_size_c,-2.2160085706596417,6.144959015601333,0.7201474711497209,70,15,True,True,clustered by bank
+CAR-augmented two-way FE,ori_score,board_x_size,16.86395062914419,20.00127955699518,0.40381396232026456,70,15,True,True,clustered by bank
+CAR-augmented two-way FE,ori_score,roa,85.57381340167962,45.55759607595349,0.06712229569170103,70,15,True,True,clustered by bank
+CAR-augmented two-way FE,ori_score,liquidity_ratio,1.9545740168671095,18.8212149165835,0.917771634518844,70,15,True,True,clustered by bank
+CAR-augmented two-way FE,ori_score,leverage_ratio,14.672909830502922,29.88429124603736,0.6259296217077455,70,15,True,True,clustered by bank
+CAR-augmented two-way FE,ori_score,capital_adequacy_ratio,0.1599473443530676,0.19945513910778073,0.4270080978322901,70,15,True,True,clustered by bank
+Full-disclosure logit GLM,full_disclosure,board_independence_c,-2.8539534571871434,1.9765511106247755,0.1487654970438757,95,16,False,True,clustered by bank
+Full-disclosure logit GLM,full_disclosure,firm_size_c,-0.6046520934459861,0.7595145483628275,0.42597195409048116,95,16,False,True,clustered by bank
+Full-disclosure logit GLM,full_disclosure,board_x_size,2.6061706251845203,2.3337650150677254,0.2641124953560253,95,16,False,True,clustered by bank
+Full-disclosure logit GLM,full_disclosure,roa,30.766280698317754,17.66619719912071,0.08159004241885798,95,16,False,True,clustered by bank
+Full-disclosure logit GLM,full_disclosure,liquidity_ratio,-1.3917070306306711,3.8900536593628616,0.7205226514757934,95,16,False,True,clustered by bank
+Full-disclosure logit GLM,full_disclosure,leverage_ratio,13.1449612604091,9.463029843206652,0.1648066329280624,95,16,False,True,clustered by bank
+Fractional-response logit GLM,ori_fraction,board_independence_c,-1.8914950583815178,0.9846230568783714,0.054727333017544635,95,16,False,True,clustered by bank
+Fractional-response logit GLM,ori_fraction,firm_size_c,-0.08459187569331073,0.44944189447894856,0.850707818655381,95,16,False,True,clustered by bank
+Fractional-response logit GLM,ori_fraction,board_x_size,0.6691719611664398,1.0508587469867148,0.5242643561607634,95,16,False,True,clustered by bank
+Fractional-response logit GLM,ori_fraction,roa,15.724136685560817,9.69813120336752,0.10494101371641097,95,16,False,True,clustered by bank
+Fractional-response logit GLM,ori_fraction,liquidity_ratio,-0.31056904353413445,2.6701285568592326,0.9074049636478096,95,16,False,True,clustered by bank
+Fractional-response logit GLM,ori_fraction,leverage_ratio,8.380235979084532,6.044220890068307,0.16559813153544167,95,16,False,True,clustered by bank
+NPL separate-outcome two-way FE,npl_ratio,board_independence_c,8.206309346618374,21.494703161881215,0.70628517343164,43,10,True,True,clustered by bank
+NPL separate-outcome two-way FE,npl_ratio,firm_size_c,-21.360478219919212,21.1725287840541,0.3240017415809051,43,10,True,True,clustered by bank
+NPL separate-outcome two-way FE,npl_ratio,board_x_size,-18.44610786146716,36.00358617204632,0.6135179431355433,43,10,True,True,clustered by bank
+NPL separate-outcome two-way FE,npl_ratio,roa,175.60587272236825,84.70248427288104,0.05006734224620235,43,10,True,True,clustered by bank
+NPL separate-outcome two-way FE,npl_ratio,liquidity_ratio,47.99890490618296,76.76941875404958,0.5382490467010812,43,10,True,True,clustered by bank
+NPL separate-outcome two-way FE,npl_ratio,leverage_ratio,19.257801650230526,88.68553798819082,0.8300949446032524,43,10,True,True,clustered by bank

@@ -1,0 +1,6 @@
+{
+  "source_path": "data\\frozen\\bank_year_master.csv",
+  "frozen_path": "input_frozen\\bank_year_master.csv",
+  "sha256": "e37c7fdcb0dd8268982891dbf005e3666fd6aa237838ac49856aefbf4844e933",
+  "frozen_at_utc": "2026-09-12T13:48:41.077575+00:00"
+}

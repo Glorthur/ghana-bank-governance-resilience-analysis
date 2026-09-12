@@ -26,13 +26,14 @@ from wildboottest.wildboottest import wildboottest
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = ROOT / "data" / "frozen" / "bank_year_master.csv"
-OUTPUT_ROOT = ROOT
+OUTPUT_ROOT = ROOT / "outputs"
 FROZEN = OUTPUT_ROOT / "input_frozen" / "bank_year_master.csv"
 DATA_DIR = OUTPUT_ROOT / "data"
 TABLE_DIR = OUTPUT_ROOT / "tables"
 FIGURE_DIR = OUTPUT_ROOT / "figures"
 DIAGNOSTIC_DIR = OUTPUT_ROOT / "diagnostics"
 LOG_DIR = OUTPUT_ROOT / "logs"
+MANIFEST_DIR = OUTPUT_ROOT / "manifests"
 
 CORE = [
     "ori_score",
@@ -70,6 +71,7 @@ def ensure_dirs() -> None:
         FIGURE_DIR,
         DIAGNOSTIC_DIR,
         LOG_DIR,
+        MANIFEST_DIR,
     ]:
         directory.mkdir(parents=True, exist_ok=True)
 
@@ -138,7 +140,7 @@ def freeze_input() -> dict[str, str]:
         "sha256": frozen_hash,
         "frozen_at_utc": datetime.now(timezone.utc).isoformat(),
     }
-    (FROZEN.parent / "INPUT_MANIFEST.json").write_text(
+    (MANIFEST_DIR / "INPUT_MANIFEST.json").write_text(
         json.dumps(manifest, indent=2), encoding="utf-8"
     )
     return manifest
@@ -1245,7 +1247,7 @@ def export_results(
             "statsmodels": sm.__version__,
         },
     }
-    (OUTPUT_ROOT / "VALIDATION_REPORT.json").write_text(
+    (MANIFEST_DIR / "VALIDATION_REPORT.json").write_text(
         json.dumps(validation_payload, indent=2, default=str), encoding="utf-8"
     )
     report_lines = [
@@ -1286,7 +1288,7 @@ def export_results(
 def write_output_manifest() -> None:
     files = []
     for path in sorted(OUTPUT_ROOT.rglob("*")):
-        if path.is_file() and path.name not in {
+        if path.is_file() and path.suffix.lower() not in {".xlsx", ".xlsm"} and path.name not in {
             "OUTPUT_MANIFEST.json",
             "FINAL_ANALYSIS_AUDIT.json",
         }:
@@ -1301,13 +1303,13 @@ def write_output_manifest() -> None:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "files": files,
     }
-    (OUTPUT_ROOT / "OUTPUT_MANIFEST.json").write_text(
+    (MANIFEST_DIR / "OUTPUT_MANIFEST.json").write_text(
         json.dumps(payload, indent=2), encoding="utf-8"
     )
 
 
 def main() -> None:
-    global INPUT, OUTPUT_ROOT, FROZEN, DATA_DIR, TABLE_DIR, FIGURE_DIR, DIAGNOSTIC_DIR, LOG_DIR
+    global INPUT, OUTPUT_ROOT, FROZEN, DATA_DIR, TABLE_DIR, FIGURE_DIR, DIAGNOSTIC_DIR, LOG_DIR, MANIFEST_DIR
     parser = argparse.ArgumentParser(description="Run the audited panel analysis.")
     parser.add_argument("--input", type=Path, default=INPUT, help="Input bank-year CSV")
     parser.add_argument("--output", type=Path, default=OUTPUT_ROOT, help="Output directory")
@@ -1320,6 +1322,7 @@ def main() -> None:
     FIGURE_DIR = OUTPUT_ROOT / "figures"
     DIAGNOSTIC_DIR = OUTPUT_ROOT / "diagnostics"
     LOG_DIR = OUTPUT_ROOT / "logs"
+    MANIFEST_DIR = OUTPUT_ROOT / "manifests"
     warnings.filterwarnings("default")
     np.random.seed(SEED)
     ensure_dirs()
@@ -1377,7 +1380,11 @@ def main() -> None:
         "banks": int(df.loc[df["core_sample"], "bank_id"].nunique()),
         "car_observations": int(df["car_sample"].sum()),
         "npl_observations": int(df["npl_sample"].sum()),
-        "output_root": str(OUTPUT_ROOT),
+        "output_root": (
+            str(OUTPUT_ROOT.relative_to(ROOT))
+            if OUTPUT_ROOT.is_relative_to(ROOT)
+            else OUTPUT_ROOT.name
+        ),
     }
     (LOG_DIR / "run_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(json.dumps(summary, indent=2))

@@ -1,0 +1,4 @@
+hypothesis,expected_direction,coefficient,two_sided_p_value,one_sided_positive_p_value,supported_at_5_percent_one_sided
+H1,nondirectional,-18.76021517327689,0.023775001968191267,0.9881124990159044,True
+H2,positive,9.133234453461222,0.23977206236667725,0.11988603118333863,False
+H3,positive,14.33895260013248,0.441269749132728,0.220634874566364,False

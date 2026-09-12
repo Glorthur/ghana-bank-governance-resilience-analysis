@@ -1,0 +1,2 @@
+test,statistic,degrees_of_freedom,p_value,interpretation
+Mundlak joint test of bank-level regressor means,13.422395044647354,6,0.03679768833240549,Bank effects are correlated with regressors; FE is preferred

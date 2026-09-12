@@ -1,0 +1,2 @@
+test,null_hypothesis,estimated_coefficient,std_error,statistic,p_value,interpretation
+Wooldridge first-difference serial-correlation test,First-difference residual coefficient equals -0.5 (no AR(1) in levels),-0.20897448400645957,0.1521568865234017,1.9126673964164005,0.07507850988751434,No evidence of first-order serial correlation
