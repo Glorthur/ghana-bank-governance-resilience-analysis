@@ -50,7 +50,7 @@ The pipeline writes the generated tables, figures, diagnostic results, logs, and
 
 Reproduction begins with the committed and verified dataset in `data/frozen/`. From this input, the scripts reproduce the data checks, derived variables, statistical models, diagnostics, tables, and figures.
 
-The repository does not reproduce the earlier extraction of information from annual reports. It also does not retrieve or modify the private Drive archive, original source PDFs, thesis manuscript, supervisor comments, or Digital Garden. The relevant provenance and coding decisions are documented in `docs/`.
+The repository does not reproduce the earlier extraction of information from annual reports. It also does not retrieve or modify the private Drive archive, or original source PDFs. The relevant provenance and coding decisions are documented in `docs/`.
 
 ## Repository structure
 
