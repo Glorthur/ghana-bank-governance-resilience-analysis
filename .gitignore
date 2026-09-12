@@ -1,5 +1,6 @@
 # Local orchestration and environments
 coord/
+coord-views/
 orchestrator.config.local.jsonc
 .venv/
 venv/
