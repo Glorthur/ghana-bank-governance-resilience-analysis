@@ -1,0 +1,26 @@
+﻿variable,label,type,definition,formula_or_coding,unit
+bank_id,Stable bank identifier,text,Uppercase normalized bank name,Generated from bank name,none
+bank,Bank name,text,Bank represented by the annual report,As frozen in source register,none
+year,Financial year,integer,Year ended 31 December,2020-2025,year
+ori1,Operational risk management,binary,"Explicit operational-risk framework, management or control disclosure",1=explicit disclosure; 0=no explicit disclosure after text screen; blank=unavailable,0/1
+ori2,Board/risk committee oversight,binary,"Explicit board or committee oversight of operational, cyber, technology or information-security risk",1/0/blank under ORI protocol,0/1
+ori3,Business continuity/disaster recovery,binary,"Explicit business continuity, disaster recovery or continuity arrangement",1/0/blank under ORI protocol,0/1
+ori4,Cyber/IT/information security,binary,"Explicit cyber, IT, information-security or technology-risk disclosure",1/0/blank under ORI protocol,0/1
+ori5,Internal control framework,binary,"Explicit internal-control framework, system or control environment",1/0/blank under ORI protocol,0/1
+ori6,Internal audit/audit assurance,binary,"Explicit internal audit, audit assurance or independent control review",1/0/blank under ORI protocol,0/1
+ori7,Compliance/regulatory control,binary,"Explicit regulatory compliance, monitoring, AML/CFT, conduct-risk or compliance framework",1/0/blank under ORI protocol,0/1
+ori8,Incident/crisis response,binary,"Explicit incident, crisis, disruption or breach-response disclosure",1/0/blank under ORI protocol,0/1
+ori_score,Operational Resilience Index,continuous,Additive disclosure index,SUM(ORI1:ORI8)/8*100; blank if any item unavailable,0-100
+board_total,Total directors,integer,Directors serving at year end where identifiable,Count from annual-report board roster,directors
+independent_directors,Independent directors,integer,Directors explicitly classified as independent,Count from annual-report board roster,directors
+board_independence,Board independence,continuous,Share of directors classified as independent,independent_directors/board_total,proportion
+total_assets,Total assets,currency,Bank-specific year-end total assets,Normalized to absolute Ghana cedis,GHS
+firm_size_ln_assets,Firm size,continuous,Natural log of total assets,LN(total_assets),log GHS
+profit_after_tax,Profit after tax,currency,Bank-specific profit after tax for the year,Normalized to absolute Ghana cedis,GHS
+roa,Return on assets,continuous,Profit after tax divided by year-end total assets,profit_after_tax/total_assets,proportion
+cash_and_cash_equivalents,Cash and cash equivalents,currency,Year-end cash and cash equivalents,Normalized to absolute Ghana cedis,GHS
+liquidity_ratio,Liquidity control,continuous,Cash and cash equivalents divided by total assets,cash_and_cash_equivalents/total_assets,proportion
+total_liabilities,Total liabilities,currency,Bank-specific year-end total liabilities,Normalized to absolute Ghana cedis,GHS
+leverage_ratio,Leverage control,continuous,Total liabilities divided by total assets,total_liabilities/total_assets,proportion
+capital_adequacy_ratio,Capital adequacy ratio,continuous,Bank-specific reported year-end CAR,As reported,percent
+npl_ratio,Non-performing loan ratio,continuous,"Reported NPL ratio, retained for robustness",As reported,percent
